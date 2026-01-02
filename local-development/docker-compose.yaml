@@ -127,6 +127,7 @@ services:
       RABBITMQ_DEFAULT_PASS: password
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
+      - ./config/rabbit-mq/rabbit_data-fetch.json:/etc/rabbitmq/definitions.json:ro
     restart: always
     networks:
       - enarocanje
