@@ -1,7 +1,7 @@
 services:
-  minio_mcphub:
+  minio-mcphub:
     image: minio/minio:RELEASE.2025-09-07T16-13-09Z
-    container_name: minio_mcphub
+    container_name: minio-mcphub
     ports:
       - "9010:9000"   # S3 API endpoint
       - "9011:9001"   # Web console
